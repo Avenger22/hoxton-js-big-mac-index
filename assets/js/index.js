@@ -38,7 +38,10 @@ console.log("Is : " + " " + countryFourResult + ">" +  countrySixResult + " " + 
 console.log(countryFourResult > countrySixResult)
 
 let purchasingPowerParityOne = countryOneResult / countryTwoResult
+const countryOneExchangeRatio = 1.34
+
 console.log("Comparing Exchange Rates:" + purchasingPowerParityOne.toFixed(2) + " " + "1 pound is 1.34 dollar ratio")
-let exchangeRatioOne = ((1.34 - 1.56) / 1.56)
-let FinalResultOne = exchangeRatioOne / purchasingPowerParityOne * 100;
+let indexFinalOne = ((countryOneExchangeRatio - purchasingPowerParityOne) / purchasingPowerParityOne)
+let FinalResultOne = indexFinalOne * 100;
+
 console.log("The overvalue of USA Dollar to Pound is : " + " " + FinalResultOne.toFixed(2) + "%")
